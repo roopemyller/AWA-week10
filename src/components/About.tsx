@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import '../styles/about.css'
 
 interface Post {
     id: number;
@@ -19,12 +20,14 @@ function About() {
 
     return (
         <div className="about">
-            {item.map((item) => (
-                <div key={item.id}>
-                    <h3>{item.title}</h3>
-                    <p>{item.body}</p>
-                </div>
-            ))}
+            <div className='grid-container'>
+                {item.map((item) => (
+                    <div key={item.id} className='grid-item'>
+                        <h3>{item.title}</h3>
+                        <p>{item.body}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
