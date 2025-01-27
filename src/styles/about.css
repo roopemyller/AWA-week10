@@ -17,3 +17,17 @@
 h3, p{
     color: #333;
 }
+
+.show-more-button {
+    display: block;
+    margin: 20px auto; /* Center horizontally */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
