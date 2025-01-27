@@ -1,9 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import { changeLanguage } from 'i18next';
+import i18next from 'i18next';
 import '../styles/header.css'
 
 function Header() {
     const { t } = useTranslation();
+
+    const changeLanguage = (lng: string) => {
+        i18next.changeLanguage(lng);
+    };
 
     return (
         <header className="header">
