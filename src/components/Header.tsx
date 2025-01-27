@@ -3,7 +3,7 @@ import { changeLanguage } from 'i18next';
 import '../styles/header.css'
 
 function Header() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <header className="header">
